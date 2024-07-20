@@ -2,6 +2,7 @@
 
 var display = document.getElementById("disply");
 var display2 = document.getElementById("stodis");
+
 var screen2_dis =""
 
 var a = 0;
@@ -10,7 +11,13 @@ var mode = "display";
 
 
 function appendToDisplay(input){
+    
     display.value += input;
+    str = display.value;
+
+    if (str.length >= 11){
+        display.value = str.substring(0,11)
+    }
 }
 
 function clearDisplay(){
@@ -25,9 +32,16 @@ function calculate(){
 
     try {
         display.value = eval(disply.value);
+
+        str = display.value;
+
+        if (str.length >= 11){
+            display.value = str.substring(0,11)
+        }
     } catch (error) {
         display.value = "Error"     
     }
+    
     
 }
 
