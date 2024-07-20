@@ -1,4 +1,4 @@
-//BARBIE CALCULATOR
+//Pink-est Calculator
 
 var display = document.getElementById("disply");
 var display2 = document.getElementById("stodis");
