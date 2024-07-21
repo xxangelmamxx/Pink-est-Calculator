@@ -35,8 +35,7 @@ function appendToDisplay(input){
     else{
         display.value += input;
     }
-
-    if (str.length >= 9){
+    if (length(display.value) >= 9){
         display.value = str.substring(0,9);
     }
 }
