@@ -8,7 +8,6 @@ var display3 = document.getElementById("opScreen");
 var a = 0;
 var b = 0;
 var mode = "display";
-var ans = false
 
 
 function appendToDisplay(input){
