@@ -75,7 +75,7 @@ function aFunc(){
     if (mode === "assign")  {
          a=display.value ;
          mode ="display";
-         display2.value = "b";
+         display2.value = "a";
          display3.value = "=";
     }
     
